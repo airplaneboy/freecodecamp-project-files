@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeCodeCamp Project</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title">FreeCodeCamp Survey Form</h1>
+
+  <p id="description">This is a survey form for my freecodecamp project</p>
+  <div class="container">
+
+
+    <form action="" id="survey-form">
+
+      <label for="name" id="name-label">Name:</label><br>
+      <input type="text" id="name" placeholder="Input your name" required><br>
+
+      <label for="email" id="email-label">Email:</label><br>
+      <input type="email" id="email" placeholder="Input your email" required><br>
+
+      <label for="number" id="number-label">Number</label><br>
+      <input type="number" min="1" max="100" id="number" placeholder="Input your number">
+
+      <br>
+
+      <label for="dropdown">Which is your favorite meal?</label><br>
+      <select name="dropdown" id="dropdown">
+        <option value="rice">Rice</option>
+        <option value="beans">Beans</option>
+      </select>
+
+      <p>Do you think this is a good project?</p>
+      <input type="radio" id="yes" value="Yes" name='like'>
+      <label for="yes">Yes</label>
+      <br>
+      <input type="radio" id="no" value="No" name='like'>
+      <label for="no">No</label>
+
+      <p>What do you like about this project?</p>
+      <input type="checkbox" value="everything" id="everything">
+      <label for="everything">Everything</label>
+      <br>
+      <input type="checkbox" value="somethings" id="somethings">
+      <label for="somethings">Somethings</label>
+      <br>
+      <input type="checkbox" value="nothing" id="nothing">
+      <label for="nothing">Nothing</label>
+
+      <p>You can add your comments here: </p>
+      <textarea name="text-area" id="text-area" cols="30" rows="10"></textarea>
+
+      <br>
+      <button id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
